@@ -23,7 +23,7 @@ body {
     height: 100vh;
 }
 
-.start-game {
+.first-page {
     width: 800px;
     max-width: 80%;
     background-color: var(--color-main);
@@ -33,6 +33,10 @@ body {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+}
+
+.start-button {
+    align-items: center;
 }
 
 #question-container {

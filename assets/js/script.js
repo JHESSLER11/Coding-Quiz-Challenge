@@ -1,4 +1,19 @@
+const startButton = document.getElementById('start-btn')
+const firstPage = document.getElementById('first')
+const questionContainerEl = document.getElementById("question-container")
+startButton.addEventListener('click', startGame)
+
+
 function startGame () {
+    console.log('started')
+    firstPage.classList.add('hide')
+    questionContainerEl.classList.remove('hide')
+
+    setQuestion()
+
+}
+
+function setQuestion () {
 
 }
 
