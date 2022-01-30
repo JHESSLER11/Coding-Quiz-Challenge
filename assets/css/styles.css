@@ -1,19 +1,22 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 :root {
     --color-main: rgba(215, 155, 240, 0.838);
     --color-secondary: rgba(0, 255, 238, 0.598);
 }
 header {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+/* *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} */
 
 body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

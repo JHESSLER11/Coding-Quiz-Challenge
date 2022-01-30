@@ -47,6 +47,10 @@ function resetState() {
     while (answerButtonsEl.firstChild) {
         answerButtonsEl.removeChild(answerButtonsEl.firstChild)
     }
+    // button.addEventListener('click', () => {
+    //     currentQuestionIndex++
+    //     setNextQuestion()
+    // })
 
 }
 
@@ -56,10 +60,29 @@ function selectAnswer(e) {
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsEl.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
         
     });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+
+
+    }
 }
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } 
+    else {
+        element.classList.add('correct')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
 
 
 const questions = [
@@ -91,5 +114,5 @@ const questions = [
             { text: 'fourteen', correct: true},
             { text: 'seven', correct: false}
         ]
-    },
+    }
 ]
