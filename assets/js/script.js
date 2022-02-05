@@ -12,7 +12,7 @@ startButton.addEventListener('click', startGame)
 function startGame () {
     console.log('started')
     firstPage.classList.add('hide')
-    //random question
+    //random question so they're not always asked in same order 
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     
@@ -28,6 +28,7 @@ function setQuestion () {
 
 }
 
+//shows question and runs correct or false logic 
 function showQuestion(question) {
     questionEl.innerText = question.question
     question.answers.forEach(answers => {
