@@ -4,9 +4,9 @@ const firstPage = document.getElementById('first')
 // const questionEl = document.getElementById('question')
 // const answerButtonsEl = document.getElementById('answer-buttons')
 
-// let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+
+startButton.addEventListener('click', startGame);
 
 
 function startGame () {
